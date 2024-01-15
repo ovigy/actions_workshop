@@ -1,0 +1,17 @@
+name: linter to check for consistent code
+
+on: 
+  push:
+  workflow_dispatch:
+
+jobs:
+  run-python-linter:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout repository
+      uses: actions/
+
+    - name: install pylint
+      run: | 
+        pip install pylint
